@@ -181,7 +181,7 @@
   -o-transition: all ease-in-out 500ms;
 }
 .banner .main-banner #imgban3 {
-  background-image: url(/img/banner01.png);
+  background-image: url(../img/banner01.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -189,7 +189,7 @@
   align-items: center;
 }
 .banner .main-banner #imgban2 {
-  background-image: url(/img/banner02.png);
+  background-image: url(../img/banner02.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -197,7 +197,7 @@
   align-items: center;
 }
 .banner .main-banner #imgban1 {
-  background-image: url(/img/banner01.png);
+  background-image: url(../img/banner01.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -244,7 +244,7 @@
 }
 .banner .imgbanbtn-prev {
   left: 30px;
-  background-image: url(/img/svg/setaEsquerda.svg);
+  background-image: url(../img/svg/setaEsquerda.svg);
   background-size: 60%;
   background-position: center;
   background-repeat: no-repeat;
@@ -252,7 +252,7 @@
 }
 .banner .imgbanbtn-next {
   right: 30px;
-  background-image: url(/img/svg/setaDireita.svg);
+  background-image: url(../img/svg/setaDireita.svg);
   background-size: 60%;
   background-position: center;
   background-repeat: no-repeat;
@@ -352,14 +352,14 @@
   margin-left: -15px;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(/img/svg/setaEsquerda02.svg);
+  background-image: url(../img/svg/setaEsquerda02.svg);
 }
 .categorias .inner-width .carroselCategoria #btnCategoria-next {
   border-radius: 50%;
   margin-right: -15px;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(/img/svg/setaDireita02.svg);
+  background-image: url(../img/svg/setaDireita02.svg);
 }
 
 .vitrine {
@@ -540,14 +540,14 @@
   margin-left: -15px;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(/img/svg/setaEsquerda02.svg);
+  background-image: url(../img/svg/setaEsquerda02.svg);
 }
 .vitrine .inner-width .carroselVitrine #btnProdutos-next {
   border-radius: 50%;
   margin-right: -15px;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(/img/svg/setaDireita02.svg);
+  background-image: url(../img/svg/setaDireita02.svg);
 }
 .vitrine .inner-width .vitrineAll {
   display: flex;
@@ -722,14 +722,14 @@
   margin-left: -15px;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(/img/svg/setaEsquerda02.svg);
+  background-image: url(../img/svg/setaEsquerda02.svg);
 }
 .marcas .inner-width .carroselMarcas #btnMarca-next {
   border-radius: 50%;
   margin-right: -15px;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(/img/svg/setaDireita02.svg);
+  background-image: url(../img/svg/setaDireita02.svg);
 }
 
 .parceirosAssinatura {
@@ -745,7 +745,7 @@
 .parceirosAssinatura .conteudoParceiros .parceiros {
   width: 574px;
   height: 350px;
-  background-image: url(/img/parceirosImg.png);
+  background-image: url(../img/parceirosImg.png);
   margin-right: 10px;
   margin-left: 35px;
   padding: 114px 40px 40px;
@@ -947,14 +947,14 @@
   margin-left: -15px;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(/img/svg/setaEsquerda02.svg);
+  background-image: url(../img/svg/setaEsquerda02.svg);
 }
 .artigos .inner-width .carroselArtigos #btnArtigos-next {
   border-radius: 50%;
   margin-right: -15px;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(/img/svg/setaDireita02.svg);
+  background-image: url(../img/svg/setaDireita02.svg);
 }
 .artigos .inner-width .dotsBlog {
   display: flex;
