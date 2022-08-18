@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cãoselheiro - Home</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header class="site">
+        <section class="topo">
+            <article class="inner-width">
+                <div>
+                    <img src="./img/svg/ShieldCheck.svg" alt="Icone">
+                    <p>Compra <span>100% segura</span></p>
+                </div>
+                <div>
+                    <img src="./img/svg/Truck.svg" alt="Icone">
+                    <p><span>Frete grátis</span> acima de R$ 200</p>
+                </div>
+                <div>
+                    <img src="./img/svg/CreditCard.svg" alt="Icone">
+                    <p><span>Parcele</span> suas compras</p>
+                </div>
+            </article>
+        </section>
+        <hr>
+        <section class="menu">
+            <article class="inner-width">
+                <div>
+                    <a href="index.html" class="logo"><img src="./img/svg/logo.svg" alt="Logo"></a>
+                </div>
+                <div>
+                    <form action="" class="searchBar">
+                        <input type="text" placeholder="O que você está buscando?">
+                        <button type="submit"><img src="./img/svg/searchIcon.svg" alt="Icone"></button>
+                    </form>
+                </div>
+                <div id="iconNav">
+                    <a href="#"><img src="./img/boxIcon.png" alt=""></a>
+                    <a href="#"><img src="./img/heartIcon.png" alt=""></a>
+                    <a href="#"><img src="./img/userIcon.png" alt=""></a>
+                    <a href="#"><img src="./img/cartIcon.png" alt=""></a>
+                </div>
+            </article>
+        </section>
+        <hr>
+        <section class="menuNav">
+            <article class="inner-width">
+                    <div><a href="#">Brincar</a></div>
+                    <div><a href="#">Morder</a></div>
+                    <div><a href="#">Comer</a></div>
+                    <div><a href="#">Passear</a></div>
+                    <div><a href="#">Casa e conforto</a></div>
+                    <div><a href="#">Educação</a></div>
+                    <div><a href="#"><span>Ofertas</span></a></div>
+                    <div>
+                        <img src="./img/svg/coroaIcon.svg" alt="Icone">
+                        <a href="#">Coleção de outono</a>
+                    </div>
+            </article>
+        </section>
+    </header>
+    <main>
+        <section class="banner">     
+            <span id="linear"></span>
+            <!-- <span id="filtro"></span> -->
+            <div class="main-banner" id="main-banner">
+
+                <div class="imgbanbtn imgbanbtn-prev" id="imgbanbtn-prev"></div>
+        
+                <div class="imgban" id="imgban3">
+                    <div class="imgban-box">
+                        <h2>As melhores guias <br>para os melhores <br>passeios.</h2>
+                        <a href="#" class="btnBanner">CONFIRA</a>
+                    </div>
+                </div>
+                <div class="imgban" id="imgban2">
+                    <div class="imgban-box">
+                        <h2>As melhores guias <br>para os melhores <br>passeios.</h2>
+                        <a href="#" class="btnBanner">CONFIRA</a>
+                    </div>
+                </div>
+                <div class="imgban" id="imgban1">
+                    <div class="imgban-box">
+                        <h2>As melhores guias <br>para os melhores <br>passeios.</h2>
+                        <a href="#" class="btnBanner">CONFIRA</a>
+                    </div>
+                </div>
+                <div class="imgbanbtn imgbanbtn-next" id="imgbanbtn-next"></div>
+            </div>
+            <div id="scrollDown">
+                <div class="dotsBanner">
+                    <span id="dotsBannerAtivado"></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <img src="./img/svg/scrollDown.svg" alt="">
+            </div>
+        </section>
+        <section class="categorias">
+            <article class="inner-width">
+                <h2>Categorias</h2>
+                <div class="carroselCategoria">
+                    <div class="conteudoCategorias">
+    
+                        <div>
+                            <img src="./img/categoria01.png" alt="Categoria">
+                            <h3>Brinquedos</h3>
+                        </div>
+                        <div>
+                            <img src="./img/categoria02.png" alt="Categoria">
+                            <h3>Petiscos</h3>
+                        </div>
+                        <div>
+                            <img src="./img/categoria03.png" alt="Categoria">
+                            <h3>Guias</h3>
+                        </div>
+                        <div>
+                            <img src="./img/categoria04.png" alt="Categoria">
+                            <h3>Higiene</h3>
+                        </div>
+                    </div>
+                    <div class="btnsCategoria">
+                        <div class="btnCategoria btnCategoria-next" id="btnCategoria-prev"></div>
+                        <div class="btnCategoria btnCategoria-next" id="btnCategoria-next"></div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="vitrine">
+            <article class="inner-width">
+                <div class="vitrineOpcoes">
+                    <h2>Meu cachorro...</h2>
+                    <div>
+                        <a href="" class="selecionado">é agitado</a>
+                        <a href="">morde</a>
+                        <a href="">late muito</a>
+                        <a href="">é ansioso</a>
+                        <a href="">é estressado</a>
+                        <div id="setaOpcoes">
+                            <img id="seta01" src="./img/svg/setaEsquerda03.svg" alt="">
+                            <img id="seta02" src="./img/svg/setaDireita03.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="carroselVitrine">
+                    <div class="conteudoVitrine">
+                        <div class="cardProduto">
+                            <div class="badge">40% OFF</div>
+                            <div class="badgeHeart">
+                                <img src="./img/heartIcon.png" alt="">
+                            </div>
+                            <div class="produtoFoto">
+                                <img src="./img/card02.png" alt="">
+                            </div>
+                            <div class="detalhesProduto">
+                                <h3 class="nomeProduto">Brinquedo Kong Duratreat Ring P</h3>
+                                <h4>De R$ 96,69</h4>
+                                <h2>Por R$ 90,69</h2>
+                                <p><span>R$ 85,69</span><br>Para assinantes</p>
+                            </div>
+                            <button class="btnProduto">ADICIONAR</button>
+                        </div>
+                        <div class="cardProduto">
+                            <div class="badge">40% OFF</div>
+                            <div class="badgeHeart">
+                                <img src="./img/heartIcon.png" alt="">
+                            </div>
+                            <div class="produtoFoto">
+                                <img src="./img/card01.png" alt="">
+                            </div>
+                            <div class="detalhesProduto">
+                                <h3 class="nomeProduto">Bola de Tênis Chuckit M - Pack com 2</h3>
+                                <h4>De R$ 96,69</h4>
+                                <h2>Por R$ 90,69</h2>
+                                <p><span>R$ 85,69</span><br>Para assinantes</p>
+                            </div>
+                            <button class="btnProduto">ADICIONAR</button>
+                        </div>
+                        <div class="cardProduto">
+                            <div class="badge">40% OFF</div>
+                            <div class="badgeHeart">
+                                <img src="./img/heartIcon.png" alt="">
+                            </div>
+                            <div class="produtoFoto">
+                                <img src="./img/card02.png" alt="">
+                            </div>
+                            <div class="detalhesProduto">
+                                <h3 class="nomeProduto">Brinquedo Kong Duratreat Ring P</h3>
+                                <h4>De R$ 96,69</h4>
+                                <h2>Por R$ 90,69</h2>
+                                <p><span>R$ 85,69</span><br>Para assinantes</p>
+                            </div>
+                            <button class="btnProduto">ADICIONAR</button>
+                        </div>
+                        <div class="cardProduto">
+                            <div class="badge">40% OFF</div>
+                            <div class="badgeHeart">
+                                <img src="./img/heartIcon.png" alt="">
+                            </div>
+                            <div class="produtoFoto">
+                                <img src="./img/card01.png" alt="">
+                            </div>
+                            <div class="detalhesProduto">
+                                <h3 class="nomeProduto">Bola de Tênis Chuckit M - Pack com 2</h3>
+                                <h4>De R$ 96,69</h4>
+                                <h2>Por R$ 90,69</h2>
+                                <p><span>R$ 85,69</span><br>Para assinantes</p>
+                            </div>
+                            <button class="btnProduto">ADICIONAR</button>
+                        </div>
+                    </div>
+                    <div class="btnsProdutos">
+                        <div class="btnProdutos btnProdutos-next" id="btnProdutos-prev"></div>
+                        <div class="btnProdutos btnProdutos-next" id="btnProdutos-next"></div>
+                    </div>
+                </div>
+                <div class="vitrineAll">
+                    <a href="#">Ver todos</a>
+                    <div class="dotsVitrine">
+                        <div id="dotsAtivado"></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="modalContainer">
+                    <div class="modal">
+                        <div class="close">
+                            <img id="close" src="./img/svg/close.svg" alt="">
+                        </div>
+                        <div class="conteudoModal">
+                            <img id="modalImg" src="./img/modal.png" alt="">
+                            <div class="descModal">
+                                <h2>Brinquedo Kong Duratreat Ring P</h2>
+                                <h3>R$ 1499,90</h3>
+                                <p>Many desktop publishing packages and web page editors now many desktop publishing</p>
+                                <a href="#"><h4>Veja mais detalhes do produto</h4></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="marcas">
+            <article class="inner-width">
+                <div class="marcaHeader">
+                    <h2>Principais marcas</h2>
+                    <div>
+                        <a href="">Ver todos</a>
+                    </div>
+                </div>
+                <div class="carroselMarcas">
+                    <div class="conteudoMarcas">
+                        <div class="cardMarca">
+                            <a href=""><img src="./img/marca01.png" alt=""></a>
+                        </div>
+                        <div class="cardMarca">
+                            <a href=""><img src="./img/marca02.png" alt=""></a>
+                        </div>
+                        <div class="cardMarca">
+                            <a href=""><img src="./img/marca03.png" alt=""></a>
+                        </div>
+                        <div class="cardMarca">
+                            <a href=""><img src="./img/marca01.png" alt=""></a>
+                        </div>
+                        <div class="cardMarca">
+                            <a href=""><img src="./img/marca02.png" alt=""></a>
+                        </div>
+                        <div class="cardMarca">
+                            <a href=""><img src="./img/marca03.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="btnsMarca">
+                        <div class="btnMarca btnMarca-next" id="btnMarca-prev"></div>
+                        <div class="btnMarca btnMarca-next" id="btnMarca-next"></div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="parceirosAssinatura">
+            <article class="conteudoParceiros">
+                <div class="parceiros">
+                    <h2>Parceiros</h2>
+                    <p>Lorem ipsum dolor sit<br>amet, consectetur</p>
+                    <a href="#">Confira</a>
+                    <div></div>
+                </div>
+                <div class="assinatura">
+                    <div>
+                        <h2>Assinatura<br>Cãoselheiro</h2>
+                        <p>Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit. Auctor<br>adipiscing quis non sed.</p>
+                        <a href="#">Saiba mais</a>
+                    </div>
+                    <div id="imgAssinatura"><img src="./img/assinaturaImg.png" alt="Assinatura"></div>
+                </div>
+            </article>
+        </section>
+        <section class="artigos">
+            <article class="inner-width">
+                <div class="artigoTitulo">
+                    <h2>Confira o nosso Blog</h2>
+                </div>
+                <div class="carroselArtigos">
+                    <div class="conteudoArtigos">
+                        <div class="cardArtigo">
+                            <div class="artigoFoto">
+                                <img src="./img/artigo01.png" alt="">
+                            </div>
+                            <div class="detalhesArtigo">
+                                <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur elit adipiscing dignissim posuere vitae.</p>
+                            </div>
+                            <button class="btnArtigo">Ler artigo</button>
+                        </div>
+                        <div class="cardArtigo">
+                            <div class="artigoFoto">
+                                <img src="./img/artigo02.png" alt="">
+                            </div>
+                            <div class="detalhesArtigo">
+                                <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur elit adipiscing dignissim posuere vitae.</p>
+                            </div>
+                            <button class="btnArtigo">Ler artigo</button>
+                        </div>
+                        <div class="cardArtigo">
+                            <div class="artigoFoto">
+                                <img src="./img/artigo03.png" alt="">
+                            </div>
+                            <div class="detalhesArtigo">
+                                <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur elit adipiscing dignissim posuere vitae.</p>
+                            </div>
+                            <button class="btnArtigo">Ler artigo</button>
+                        </div>
+                        <div class="cardArtigo">
+                            <div class="artigoFoto">
+                                <img src="./img/artigo04.png" alt="">
+                            </div>
+                            <div class="detalhesArtigo">
+                                <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur elit adipiscing dignissim posuere vitae.</p>
+                            </div>
+                            <button class="btnArtigo">Ler artigo</button>
+                        </div>
+                    </div>
+                    <div class="btnsArtigos">
+                        <div class="btnArtigos btnArtigos-next" id="btnArtigos-prev"></div>
+                        <div class="btnArtigos btnArtigos-next" id="btnArtigos-next"></div>
+                    </div>
+                </div>
+                <div class="dotsBlog">
+                    <div class="dots">
+                        <div id="dotsAtivado"></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="galeria">
+            <article class="inner-width">
+                <div class="galeriaHeader">
+                    <h2>Instagram</h2>
+                    <div>
+                        <a href="">+Seguir</a>
+                    </div>
+                </div>
+            </article>
+            <div class="conteudoGaleria owl-carousel">
+                <div><img src="img/galeria01.png" alt="Galeria 01"></div>
+                <div><img src="img/galeria02.png" alt="Galeria 02"></div>
+                <div><img src="img/galeria03.png" alt="Galeria 03"></div>
+                <div><img src="img/galeria04.png" alt="Galeria 04"></div>
+                <div><img src="img/galeria05.png" alt="Galeria 05"></div>
+                <div><img src="img/galeria06.png" alt="Galeria 06"></div>
+            </div>
+        </section>
+        <section class="newsletter">
+            <article class="inner-width">
+                <div class="container">
+                    <div class="img__container">
+                        <img src="./img/newsletter.png" alt="newsletter" class="img"> 
+                    </div>   
+                    <div class="content">
+                        <h2 class="subtitle">Se inscreva para receber novidades e promoções</h2>
+                        <form class="cadInput">
+                            <input type="text" placeholder="Digite seu nome" id="fname" name="" value="">
+                            <input type="email" placeholder="Digite seu e-mail" id="email" name="" value="">
+                            <input type="submit" value="ENVIAR" class="cadastro-btn">
+                        </form>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+    </main>
+    
+    <footer>
+        <section class="rodape">
+            <article class="redesSociais">
+               <h1>Nos siga nas nossas redes sociais</h1>
+               <div class="redes">
+                <img src="./img/svg/iconFacebook.svg" alt="Facebook">
+                <img src="./img/svg/iconInstagram.svg" alt="Instagram">
+                <img src="./img/svg/iconYoutube.svg" alt="Youtube">
+            </div>
+               <h1>Sobre O Cãoselheiro</h1>
+               <p>Seja muito bem-vindo! O Cãoselheiro - a loja - é a loja online de uma empresa que nasceu para contribuir para uma melhor qualidade de vida dos cães e seus familiares humanos. Seus sócios são profissionais de educação canina que trabalham seguindo metodologias positivas de treinamento animal, encorajando e recompensando os acertos de nossos amigos em seus processos de adestramento. Aqui você encontrará apenas itens de qualidade comprovada e utilizados pessoalmente por seus idealizadores. Fique à vontade!</p>
+            </article>
+            <section class="info">
+               <article class="conteudoInfo">
+                  <div>
+                     <h1>Assinatura</h1>
+                     <h1>Parceiros</h1>
+                  </div>
+                  <div>
+                     <h1>Institucional</h1>
+                     <p>Quem somos</p>
+                     <p>Política de privacidade</p>
+                     <p>Política comercial</p>
+                     <p>Política de devolução</p>
+                     <p>Regras de frete</p>
+                  </div>
+                  <div>
+                     <h1>Atendimento</h1>
+                     <p>Fale conosco</p>
+                     <p>(11) 97212-1314</p>
+                     <p>ocaoselheiro@ocaoselheiro.com.br</p>
+                     <p>Trabalhe conosco</p>
+                  </div>
+               </article>
+               <section class="pagamento">
+                  <article class="formas">
+                     <h1>Formas de pagamento</h1>
+                     <div class="metodoPagamento">
+                        <img src="./img/pagamentoOpc.png" alt="AmericanExpress">
+                    </div>
+                  </article>
+                  <div>
+                     <h1>Segurança</h1>
+                     <img src="./img/letsEncrypt.png" alt="Let Encrypt">
+                  </div>
+               </section>
+               <article class="empresaInfo">
+                  <div class="conteudoEmpresaInfo">
+                     <p>O Cãoselheiro Comércio LTDA</p>
+                     <p>CNPJ: 30.324.633/0001-16</p>
+                     <p>© Todos os direitos reservados. 2021</p>
+                  </div>
+                  <div class="empresas">
+                    <img src="./img/empresa.png" alt="Econverse e Vtex">
+                </div>
+               </article>
+            </section>
+         </section>
+    </footer>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>

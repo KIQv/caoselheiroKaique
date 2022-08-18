@@ -1,0 +1,20 @@
+// Import cores
+@import "./cores/cores.scss";
+
+// Import pagina home
+@import "./paginas/home.scss";
+
+// Import fontes
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.inner-width{
+    max-width: 1280px;
+    padding: 40px;
+    margin: auto;
+}
