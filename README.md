@@ -1,8 +1,8 @@
 <h1>Cãoselheiro - WebSite</h1>
 
-Oi tudo bem?? Este é um projeto que eu desenvolvi para um teste da empresa Econvers
+Oi tudo bem?? Este é um projeto que eu desenvolvi para um teste da empresa <a href="https://www.econverse.com.br/">Econverse</a>
 
-- A proposta era desenvolver um WebSite com HTML utilizando o layout do Figma disponibilizado pela Econverse. 
+- A proposta era desenvolver um WebSite com HTML utilizando o layout do Figma disponibilizado pela empresa. 
 
 28/08/2022
 - Mesmo que já tenha passado o processo seletivo andei estudando e acabei aplicando algumas alterações (que estavam faltando na entrega) neste projeto, como a vitrine sendo preenchida com os produtos do JSON liberado pela empresa, e algumas outras alterações que achei interessante para este projeto como a troca da biblioteca de carrossel OWL para SwiperJS por ser uma biblioteca com mais opções para customização. Caso queira ver as alterações com mais detalhe recomendo ver meu ultimo commit
