@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+body {
+  overflow-x: hidden;
+}
+
 .site .topo {
   width: 100%;
   height: 32px;
@@ -300,6 +304,9 @@
   width: 100%;
   height: auto;
 }
+.categorias .inner-width {
+  overflow: hidden;
+}
 .categorias .inner-width h2 {
   color: #4D4D4D;
   font-size: 32px;
@@ -308,21 +315,23 @@
   line-height: 48px;
   margin-bottom: 24px;
 }
-.categorias .inner-width .carroselCategoria .conteudoCategorias {
+.categorias .inner-width .carrosselCategoria .conteudoCategorias {
   display: flex;
   justify-content: space-between;
 }
-.categorias .inner-width .carroselCategoria .conteudoCategorias div {
+.categorias .inner-width .carrosselCategoria .conteudoCategorias div {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 20px;
 }
-.categorias .inner-width .carroselCategoria .conteudoCategorias div img {
+.categorias .inner-width .carrosselCategoria .conteudoCategorias div img {
+  border-radius: 20px;
   width: 277px;
   height: 277px;
   margin-bottom: 8px;
 }
-.categorias .inner-width .carroselCategoria .conteudoCategorias div h3 {
+.categorias .inner-width .carrosselCategoria .conteudoCategorias div h3 {
   color: #9F9F9F;
   font-size: 24px;
   font-family: Poppins;
@@ -330,7 +339,7 @@
   line-height: 16px;
   margin-top: 8px;
 }
-.categorias .inner-width .carroselCategoria .btnCategoria {
+.categorias .inner-width .carrosselCategoria .btnCategoria {
   width: 32px;
   height: 32px;
   background-color: #fff;
@@ -339,7 +348,7 @@
   cursor: pointer;
   box-shadow: 0px 6px 16px rgba(179, 134, 0, 0.24);
 }
-.categorias .inner-width .carroselCategoria .btnsCategoria {
+.categorias .inner-width .carrosselCategoria .btnsCategoria {
   width: 1200px;
   height: 25px;
   display: flex;
@@ -348,13 +357,13 @@
   margin-top: -180px;
   position: absolute;
 }
-.categorias .inner-width .carroselCategoria #btnCategoria-prev {
+.categorias .inner-width .carrosselCategoria #btnCategoria-prev {
   margin-left: -15px;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url(../img/svg/setaEsquerda02.svg);
 }
-.categorias .inner-width .carroselCategoria #btnCategoria-next {
+.categorias .inner-width .carrosselCategoria #btnCategoria-next {
   border-radius: 50%;
   margin-right: -15px;
   background-position: center;
@@ -366,6 +375,9 @@
   margin: 40px 0;
   width: 100%;
   height: auto;
+}
+.vitrine .inner-width {
+  overflow: hidden;
 }
 .vitrine .inner-width .vitrineOpcoes {
   display: flex;
@@ -415,13 +427,13 @@
 .vitrine .inner-width .vitrineOpcoes div a:hover .selecionado {
   background-color: red;
 }
-.vitrine .inner-width .carroselVitrine .conteudoVitrine {
+.vitrine .inner-width .carrosselVitrine .conteudoVitrine {
   display: flex;
   justify-content: space-between;
 }
-.vitrine .inner-width .carroselVitrine .conteudoVitrine .cardProduto {
+.vitrine .inner-width .carrosselVitrine .conteudoVitrine .cardProduto {
   width: 254px;
-  height: auto;
+  height: 415px;
   position: relative;
   margin: 50px auto;
   display: flex;
@@ -429,7 +441,7 @@
   align-items: center;
   transition: all 1s;
 }
-.vitrine .inner-width .carroselVitrine .conteudoVitrine .cardProduto .badge {
+.vitrine .inner-width .carrosselVitrine .conteudoVitrine .cardProduto .badge {
   color: #FBB900;
   font-size: 14px;
   font-family: Poppins;
@@ -443,7 +455,7 @@
   border-radius: 6px;
   padding: 10px 20px;
 }
-.vitrine .inner-width .carroselVitrine .conteudoVitrine .cardProduto .badgeHeart {
+.vitrine .inner-width .carrosselVitrine .conteudoVitrine .cardProduto .badgeHeart {
   width: 32px;
   height: 32px;
   position: absolute;
@@ -451,26 +463,28 @@
   top: 20px;
   cursor: pointer;
 }
-.vitrine .inner-width .carroselVitrine .conteudoVitrine .cardProduto .produtoFoto {
+.vitrine .inner-width .carrosselVitrine .conteudoVitrine .cardProduto .produtoFoto {
   width: 180px;
   height: 180px;
   cursor: pointer;
 }
-.vitrine .inner-width .carroselVitrine .conteudoVitrine .cardProduto .detalhesProduto {
+.vitrine .inner-width .carrosselVitrine .conteudoVitrine .cardProduto .detalhesProduto {
   margin-top: 10px;
   text-align: center;
   max-width: 165px;
 }
-.vitrine .inner-width .carroselVitrine .conteudoVitrine .cardProduto .detalhesProduto h3 {
+.vitrine .inner-width .carrosselVitrine .conteudoVitrine .cardProduto .detalhesProduto h3 {
   color: #4D4D4D;
   font-size: 14px;
   font-family: Poppins;
   font-weight: 300;
   line-height: 21px;
+  text-transform: uppercase;
+  height: 42px;
   margin-bottom: 14px;
   cursor: pointer;
 }
-.vitrine .inner-width .carroselVitrine .conteudoVitrine .cardProduto .detalhesProduto h4 {
+.vitrine .inner-width .carrosselVitrine .conteudoVitrine .cardProduto .detalhesProduto h4 {
   color: #9F9F9F;
   font-size: 16px;
   font-family: Poppins;
@@ -479,7 +493,7 @@
   text-decoration-line: line-through;
   margin-bottom: 4px;
 }
-.vitrine .inner-width .carroselVitrine .conteudoVitrine .cardProduto .detalhesProduto h2 {
+.vitrine .inner-width .carrosselVitrine .conteudoVitrine .cardProduto .detalhesProduto h2 {
   color: #4D4D4D;
   font-size: 18px;
   font-family: Poppins;
@@ -487,7 +501,7 @@
   line-height: 27px;
   margin-bottom: 4px;
 }
-.vitrine .inner-width .carroselVitrine .conteudoVitrine .cardProduto .detalhesProduto p {
+.vitrine .inner-width .carrosselVitrine .conteudoVitrine .cardProduto .detalhesProduto p {
   color: #4D4D4D;
   font-size: 12px;
   font-family: Poppins;
@@ -495,14 +509,14 @@
   line-height: 18px;
   margin-bottom: 14px;
 }
-.vitrine .inner-width .carroselVitrine .conteudoVitrine .cardProduto .detalhesProduto p span {
+.vitrine .inner-width .carrosselVitrine .conteudoVitrine .cardProduto .detalhesProduto p span {
   color: #FBB900;
   font-size: 16px;
   font-family: Poppins;
   font-weight: 700;
   line-height: 24px;
 }
-.vitrine .inner-width .carroselVitrine .conteudoVitrine .cardProduto .btnProduto {
+.vitrine .inner-width .carrosselVitrine .conteudoVitrine .cardProduto .btnProduto {
   color: #fff;
   font-size: 16px;
   font-family: Poppins;
@@ -515,10 +529,10 @@
   margin-bottom: 16px;
   cursor: pointer;
 }
-.vitrine .inner-width .carroselVitrine .conteudoVitrine .cardProduto:hover {
+.vitrine .inner-width .carrosselVitrine .conteudoVitrine .cardProduto:hover {
   box-shadow: 0 2px 7px #dfdfdf;
 }
-.vitrine .inner-width .carroselVitrine .btnProdutos {
+.vitrine .inner-width .carrosselVitrine .btnProdutos {
   width: 32px;
   height: 32px;
   background-color: #fff;
@@ -527,7 +541,7 @@
   cursor: pointer;
   box-shadow: 0px 6px 16px rgba(179, 134, 0, 0.24);
 }
-.vitrine .inner-width .carroselVitrine .btnsProdutos {
+.vitrine .inner-width .carrosselVitrine .btnsProdutos {
   width: 1200px;
   height: 25px;
   display: flex;
@@ -536,13 +550,13 @@
   margin-top: -300px;
   position: absolute;
 }
-.vitrine .inner-width .carroselVitrine #btnProdutos-prev {
+.vitrine .inner-width .carrosselVitrine #btnProdutos-prev {
   margin-left: -15px;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url(../img/svg/setaEsquerda02.svg);
 }
-.vitrine .inner-width .carroselVitrine #btnProdutos-next {
+.vitrine .inner-width .carrosselVitrine #btnProdutos-next {
   border-radius: 50%;
   margin-right: -15px;
   background-position: center;
@@ -565,15 +579,19 @@
 }
 .vitrine .inner-width .vitrineAll .dotsVitrine {
   display: flex;
+  justify-content: center;
+  margin-top: 16px;
 }
-.vitrine .inner-width .vitrineAll .dotsVitrine div {
+.vitrine .inner-width .vitrineAll .dotsVitrine span {
   width: 12px;
   height: 12px;
-  border-radius: 50%;
   border: 2px solid #9F9F9F;
-  margin: 10px 8px;
+  background-color: transparent;
 }
-.vitrine .inner-width .vitrineAll .dotsVitrine #dotsAtivado {
+.vitrine .inner-width .vitrineAll .dotsVitrine .swiper-pagination-bullet {
+  opacity: 1;
+}
+.vitrine .inner-width .vitrineAll .dotsVitrine .swiper-pagination-bullet-active {
   background-color: #9F9F9F;
 }
 .vitrine .inner-width .modalContainer {
@@ -661,6 +679,7 @@
 }
 .marcas .inner-width {
   padding: 0 40px;
+  overflow: hidden;
 }
 .marcas .inner-width .marcaHeader {
   display: flex;
@@ -684,11 +703,14 @@
   text-decoration-line: underline;
   margin-bottom: 6px;
 }
-.marcas .inner-width .carroselMarcas .conteudoMarcas {
+.marcas .inner-width .carrosselMarcas {
+  padding-bottom: 30px;
+}
+.marcas .inner-width .carrosselMarcas .conteudoMarcas {
   display: flex;
   justify-content: space-between;
 }
-.marcas .inner-width .carroselMarcas .conteudoMarcas .cardMarca {
+.marcas .inner-width .carrosselMarcas .conteudoMarcas .cardMarca {
   width: 178px;
   height: 178px;
   position: relative;
@@ -700,7 +722,7 @@
   box-shadow: 0px 8px 16px rgba(179, 134, 0, 0.12);
   transition: all 1s;
 }
-.marcas .inner-width .carroselMarcas .btnMarca {
+.marcas .inner-width .carrosselMarcas .btnMarca {
   width: 32px;
   height: 32px;
   background-color: #fff;
@@ -709,7 +731,7 @@
   cursor: pointer;
   box-shadow: 0px 6px 16px rgba(179, 134, 0, 0.24);
 }
-.marcas .inner-width .carroselMarcas .btnsMarca {
+.marcas .inner-width .carrosselMarcas .btnsMarca {
   width: 1200px;
   height: 25px;
   display: flex;
@@ -718,13 +740,13 @@
   margin-top: -100px;
   position: absolute;
 }
-.marcas .inner-width .carroselMarcas #btnMarca-prev {
+.marcas .inner-width .carrosselMarcas #btnMarca-prev {
   margin-left: -15px;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url(../img/svg/setaEsquerda02.svg);
 }
-.marcas .inner-width .carroselMarcas #btnMarca-next {
+.marcas .inner-width .carrosselMarcas #btnMarca-next {
   border-radius: 50%;
   margin-right: -15px;
   background-position: center;
@@ -740,17 +762,29 @@
 .parceirosAssinatura .conteudoParceiros {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 .parceirosAssinatura .conteudoParceiros .parceiros {
   width: 574px;
-  height: 350px;
-  background-image: url(../img/parceirosImg.png);
+  height: 386px;
   margin-right: 10px;
   margin-left: 35px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.parceirosAssinatura .conteudoParceiros .parceiros .carrosselParceiros {
+  height: 350px;
+}
+.parceirosAssinatura .conteudoParceiros .parceiros .carrosselParceiros .cardParceiros {
+  width: 574px;
+  height: 350px;
+  border-radius: 20px;
+  background-image: url(../img/parceirosImg.png);
   padding: 114px 40px 40px;
 }
-.parceirosAssinatura .conteudoParceiros .parceiros h2 {
+.parceirosAssinatura .conteudoParceiros .parceiros .carrosselParceiros .cardParceiros h2 {
   color: #fff;
   font-size: 40px;
   font-family: Poppins;
@@ -760,7 +794,7 @@
   position: relative;
   z-index: 1;
 }
-.parceirosAssinatura .conteudoParceiros .parceiros p {
+.parceirosAssinatura .conteudoParceiros .parceiros .carrosselParceiros .cardParceiros p {
   color: #fff;
   font-size: 16px;
   font-family: Poppins;
@@ -770,7 +804,7 @@
   position: relative;
   z-index: 1;
 }
-.parceirosAssinatura .conteudoParceiros .parceiros a {
+.parceirosAssinatura .conteudoParceiros .parceiros .carrosselParceiros .cardParceiros a {
   color: #fff;
   font-size: 16px;
   font-family: Poppins;
@@ -784,7 +818,7 @@
   position: relative;
   z-index: 1;
 }
-.parceirosAssinatura .conteudoParceiros .parceiros div {
+.parceirosAssinatura .conteudoParceiros .parceiros .carrosselParceiros .cardParceiros div {
   width: 574px;
   height: 284px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 85.04%);
@@ -793,6 +827,29 @@
   position: relative;
   top: -220px;
   left: -40px;
+}
+.parceirosAssinatura .conteudoParceiros .parceiros .carrosselParceiros #cardParceiros2 {
+  background-image: url(../img/parceirosImg2.png);
+}
+.parceirosAssinatura .conteudoParceiros .parceiros .carrosselParceiros #cardParceiros3 {
+  background-image: url(../img/parceirosImg3.png);
+}
+.parceirosAssinatura .conteudoParceiros .parceiros .dotsParceiros {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+.parceirosAssinatura .conteudoParceiros .parceiros .dotsParceiros span {
+  width: 12px;
+  height: 12px;
+  border: 2px solid #9F9F9F;
+  background-color: transparent;
+}
+.parceirosAssinatura .conteudoParceiros .parceiros .dotsParceiros .swiper-pagination-bullet {
+  opacity: 1;
+}
+.parceirosAssinatura .conteudoParceiros .parceiros .dotsParceiros .swiper-pagination-bullet-active {
+  background-color: #9F9F9F;
 }
 .parceirosAssinatura .conteudoParceiros .assinatura {
   width: 630px;
@@ -841,11 +898,17 @@
 .parceirosAssinatura .conteudoParceiros .assinatura #imgAssinatura img {
   width: 100%;
 }
+.parceirosAssinatura .inner-width {
+  padding: 0;
+}
 
 .artigos {
   margin: 40px 0 0;
   width: 100%;
   height: auto;
+}
+.artigos .inner-width {
+  overflow: hidden;
 }
 .artigos .inner-width .artigoTitulo {
   display: flex;
@@ -860,11 +923,11 @@
   font-weight: 700;
   line-height: 48px;
 }
-.artigos .inner-width .carroselArtigos .conteudoArtigos {
+.artigos .inner-width .carrosselArtigos .conteudoArtigos {
   display: flex;
   justify-content: space-between;
 }
-.artigos .inner-width .carroselArtigos .conteudoArtigos .cardArtigo {
+.artigos .inner-width .carrosselArtigos .conteudoArtigos .cardArtigo {
   width: 278px;
   height: 420px;
   position: relative;
@@ -876,22 +939,22 @@
   border-radius: 20px;
   transition: all 1s;
 }
-.artigos .inner-width .carroselArtigos .conteudoArtigos .cardArtigo .artigoFoto {
+.artigos .inner-width .carrosselArtigos .conteudoArtigos .cardArtigo .artigoFoto {
   width: 277px;
   height: 160px;
   margin-bottom: 24px;
   border-radius: 20px 20px 0px 0px;
   cursor: pointer;
 }
-.artigos .inner-width .carroselArtigos .conteudoArtigos .cardArtigo .artigoFoto img {
+.artigos .inner-width .carrosselArtigos .conteudoArtigos .cardArtigo .artigoFoto img {
   width: 100%;
 }
-.artigos .inner-width .carroselArtigos .conteudoArtigos .cardArtigo .detalhesArtigo {
+.artigos .inner-width .carrosselArtigos .conteudoArtigos .cardArtigo .detalhesArtigo {
   max-width: 229px;
   text-align: initial;
   margin-left: 24px;
 }
-.artigos .inner-width .carroselArtigos .conteudoArtigos .cardArtigo .detalhesArtigo h2 {
+.artigos .inner-width .carrosselArtigos .conteudoArtigos .cardArtigo .detalhesArtigo h2 {
   color: #4D4D4D;
   font-size: 20px;
   font-family: Poppins;
@@ -899,7 +962,7 @@
   line-height: 30px;
   margin-bottom: 16px;
 }
-.artigos .inner-width .carroselArtigos .conteudoArtigos .cardArtigo .detalhesArtigo p {
+.artigos .inner-width .carrosselArtigos .conteudoArtigos .cardArtigo .detalhesArtigo p {
   color: #9F9F9F;
   font-size: 14px;
   font-family: Poppins;
@@ -907,7 +970,7 @@
   line-height: 21px;
   margin-bottom: 24px;
 }
-.artigos .inner-width .carroselArtigos .conteudoArtigos .cardArtigo .btnArtigo {
+.artigos .inner-width .carrosselArtigos .conteudoArtigos .cardArtigo .btnArtigo {
   width: 153px;
   height: 48px;
   color: #fff;
@@ -922,10 +985,10 @@
   cursor: pointer;
   margin-left: 24px;
 }
-.artigos .inner-width .carroselArtigos .conteudoArtigos .cardArtigo:hover {
+.artigos .inner-width .carrosselArtigos .conteudoArtigos .cardArtigo:hover {
   box-shadow: 0 2px 7px #dfdfdf;
 }
-.artigos .inner-width .carroselArtigos .btnArtigos {
+.artigos .inner-width .carrosselArtigos .btnArtigos {
   width: 32px;
   height: 32px;
   background-color: #fff;
@@ -934,7 +997,7 @@
   cursor: pointer;
   box-shadow: 0px 6px 16px rgba(179, 134, 0, 0.24);
 }
-.artigos .inner-width .carroselArtigos .btnsArtigos {
+.artigos .inner-width .carrosselArtigos .btnsArtigos {
   width: 1200px;
   height: 25px;
   display: flex;
@@ -943,35 +1006,33 @@
   margin-top: -300px;
   position: absolute;
 }
-.artigos .inner-width .carroselArtigos #btnArtigos-prev {
+.artigos .inner-width .carrosselArtigos #btnArtigos-prev {
   margin-left: -15px;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url(../img/svg/setaEsquerda02.svg);
 }
-.artigos .inner-width .carroselArtigos #btnArtigos-next {
+.artigos .inner-width .carrosselArtigos #btnArtigos-next {
   border-radius: 50%;
   margin-right: -15px;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url(../img/svg/setaDireita02.svg);
 }
-.artigos .inner-width .dotsBlog {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .artigos .inner-width .dotsBlog .dots {
   display: flex;
+  justify-content: center;
 }
-.artigos .inner-width .dotsBlog .dots div {
+.artigos .inner-width .dotsBlog .dots span {
   width: 12px;
   height: 12px;
-  border-radius: 50%;
   border: 2px solid #9F9F9F;
-  margin: 10px 8px;
+  background-color: transparent;
 }
-.artigos .inner-width .dotsBlog .dots #dotsAtivado {
+.artigos .inner-width .dotsBlog .dots .swiper-pagination-bullet {
+  opacity: 1;
+}
+.artigos .inner-width .dotsBlog .dots .swiper-pagination-bullet-active {
   background-color: #9F9F9F;
 }
 
@@ -1003,17 +1064,19 @@
   text-decoration-line: underline;
   margin-bottom: 6px;
 }
-.galeria .conteudoGaleria {
+.galeria .carrosselGaleria .conteudoGaleria {
   display: flex;
 }
-.galeria .conteudoGaleria img {
-  height: auto;
-  width: 100%;
+.galeria .carrosselGaleria .conteudoGaleria .swiper-slide {
+  margin: 0;
+  max-width: 243px;
+  max-height: 243px;
+}
+.galeria .carrosselGaleria .conteudoGaleria img {
+  width: 243px;
+  height: 243px;
   background: #fff;
   margin: 0;
-}
-.galeria .conteudoGaleria .carousel-item {
-  margin-left: 0px;
 }
 
 .newsletter {
@@ -1105,6 +1168,7 @@ footer .rodape {
   display: flex;
   height: auto;
   width: 100%;
+  margin-top: 47px;
 }
 footer .rodape .redesSociais {
   border-right: 1px solid #fff;

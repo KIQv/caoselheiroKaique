@@ -5,9 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cãoselheiro - Home</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
@@ -15,15 +13,15 @@
         <section class="topo">
             <article class="inner-width">
                 <div>
-                    <img src="./img/svg/ShieldCheck.svg" alt="Icone">
+                    <img src="./img/svg/ShieldCheck.svg" alt="Icone escudo">
                     <p>Compra <span>100% segura</span></p>
                 </div>
                 <div>
-                    <img src="./img/svg/Truck.svg" alt="Icone">
+                    <img src="./img/svg/Truck.svg" alt="Icone frete">
                     <p><span>Frete grátis</span> acima de R$ 200</p>
                 </div>
                 <div>
-                    <img src="./img/svg/CreditCard.svg" alt="Icone">
+                    <img src="./img/svg/CreditCard.svg" alt="Icone cartão">
                     <p><span>Parcele</span> suas compras</p>
                 </div>
             </article>
@@ -32,19 +30,19 @@
         <section class="menu">
             <article class="inner-width">
                 <div>
-                    <a href="index.html" class="logo"><img src="./img/svg/logo.svg" alt="Logo"></a>
+                    <a href="index.html" class="logo"><img src="./img/svg/logo.svg" alt="Logo Cãoselheiro"></a>
                 </div>
                 <div>
                     <form action="" class="searchBar">
                         <input type="text" placeholder="O que você está buscando?">
-                        <button type="submit"><img src="./img/svg/searchIcon.svg" alt="Icone"></button>
+                        <button type="submit"><img src="./img/svg/searchIcon.svg" alt="Icone pesquisa"></button>
                     </form>
                 </div>
                 <div id="iconNav">
-                    <a href="#"><img src="./img/boxIcon.png" alt=""></a>
-                    <a href="#"><img src="./img/heartIcon.png" alt=""></a>
-                    <a href="#"><img src="./img/userIcon.png" alt=""></a>
-                    <a href="#"><img src="./img/cartIcon.png" alt=""></a>
+                    <a href="#"><img src="./img/boxIcon.png" alt="Icone caixa"></a>
+                    <a href="#"><img src="./img/heartIcon.png" alt="Icone coração"></a>
+                    <a href="#"><img src="./img/userIcon.png" alt="Icone usuario"></a>
+                    <a href="#"><img src="./img/cartIcon.png" alt="Icone carrinho"></a>
                 </div>
             </article>
         </section>
@@ -59,7 +57,7 @@
                     <div><a href="#">Educação</a></div>
                     <div><a href="#"><span>Ofertas</span></a></div>
                     <div>
-                        <img src="./img/svg/coroaIcon.svg" alt="Icone">
+                        <img src="./img/svg/coroaIcon.svg" alt="Icone coroa">
                         <a href="#">Coleção de outono</a>
                     </div>
             </article>
@@ -99,35 +97,43 @@
                     <span></span>
                     <span></span>
                 </div>
-                <img src="./img/svg/scrollDown.svg" alt="">
+                <img src="./img/svg/scrollDown.svg" alt="Icone seta">
             </div>
         </section>
         <section class="categorias">
             <article class="inner-width">
                 <h2>Categorias</h2>
-                <div class="carroselCategoria">
-                    <div class="conteudoCategorias">
+                <div class="carrosselCategoria">
+                    <div class="conteudoCategorias swiper-wrapper">
     
-                        <div>
-                            <img src="./img/categoria01.png" alt="Categoria">
+                        <div class="swiper-slide">
+                            <img src="./img/categoria01.png" alt="Categoria brinquedos">
                             <h3>Brinquedos</h3>
                         </div>
-                        <div>
-                            <img src="./img/categoria02.png" alt="Categoria">
+                        <div class="swiper-slide">
+                            <img src="./img/categoria02.png" alt="Categoria petiscos">
                             <h3>Petiscos</h3>
                         </div>
-                        <div>
-                            <img src="./img/categoria03.png" alt="Categoria">
+                        <div class="swiper-slide">
+                            <img src="./img/categoria03.png" alt="Categoria guias">
                             <h3>Guias</h3>
                         </div>
-                        <div>
-                            <img src="./img/categoria04.png" alt="Categoria">
+                        <div class="swiper-slide">
+                            <img src="./img/categoria04.png" alt="Categoria higiene">
                             <h3>Higiene</h3>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/categoria07.png" alt="Categoria acessorios">
+                            <h3>Acessorios</h3>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/categoria06.png" alt="Categoria roupas">
+                            <h3>Roupas</h3>
                         </div>
                     </div>
                     <div class="btnsCategoria">
-                        <div class="btnCategoria btnCategoria-next" id="btnCategoria-prev"></div>
-                        <div class="btnCategoria btnCategoria-next" id="btnCategoria-next"></div>
+                        <div class="btnCategoria" id="btnCategoria-prev"></div>
+                        <div class="btnCategoria" id="btnCategoria-next"></div>
                     </div>
                 </div>
             </article>
@@ -143,100 +149,31 @@
                         <a href="">é ansioso</a>
                         <a href="">é estressado</a>
                         <div id="setaOpcoes">
-                            <img id="seta01" src="./img/svg/setaEsquerda03.svg" alt="">
-                            <img id="seta02" src="./img/svg/setaDireita03.svg" alt="">
+                            <img id="seta01" src="./img/svg/setaEsquerda03.svg" alt="Icone seta">
+                            <img id="seta02" src="./img/svg/setaDireita03.svg" alt="Icone seta">
                         </div>
                     </div>
                 </div>
-                <div class="carroselVitrine">
-                    <div class="conteudoVitrine">
-                        <div class="cardProduto">
-                            <div class="badge">40% OFF</div>
-                            <div class="badgeHeart">
-                                <img src="./img/heartIcon.png" alt="">
-                            </div>
-                            <div class="produtoFoto">
-                                <img src="./img/card02.png" alt="">
-                            </div>
-                            <div class="detalhesProduto">
-                                <h3 class="nomeProduto">Brinquedo Kong Duratreat Ring P</h3>
-                                <h4>De R$ 96,69</h4>
-                                <h2>Por R$ 90,69</h2>
-                                <p><span>R$ 85,69</span><br>Para assinantes</p>
-                            </div>
-                            <button class="btnProduto">ADICIONAR</button>
-                        </div>
-                        <div class="cardProduto">
-                            <div class="badge">40% OFF</div>
-                            <div class="badgeHeart">
-                                <img src="./img/heartIcon.png" alt="">
-                            </div>
-                            <div class="produtoFoto">
-                                <img src="./img/card01.png" alt="">
-                            </div>
-                            <div class="detalhesProduto">
-                                <h3 class="nomeProduto">Bola de Tênis Chuckit M - Pack com 2</h3>
-                                <h4>De R$ 96,69</h4>
-                                <h2>Por R$ 90,69</h2>
-                                <p><span>R$ 85,69</span><br>Para assinantes</p>
-                            </div>
-                            <button class="btnProduto">ADICIONAR</button>
-                        </div>
-                        <div class="cardProduto">
-                            <div class="badge">40% OFF</div>
-                            <div class="badgeHeart">
-                                <img src="./img/heartIcon.png" alt="">
-                            </div>
-                            <div class="produtoFoto">
-                                <img src="./img/card02.png" alt="">
-                            </div>
-                            <div class="detalhesProduto">
-                                <h3 class="nomeProduto">Brinquedo Kong Duratreat Ring P</h3>
-                                <h4>De R$ 96,69</h4>
-                                <h2>Por R$ 90,69</h2>
-                                <p><span>R$ 85,69</span><br>Para assinantes</p>
-                            </div>
-                            <button class="btnProduto">ADICIONAR</button>
-                        </div>
-                        <div class="cardProduto">
-                            <div class="badge">40% OFF</div>
-                            <div class="badgeHeart">
-                                <img src="./img/heartIcon.png" alt="">
-                            </div>
-                            <div class="produtoFoto">
-                                <img src="./img/card01.png" alt="">
-                            </div>
-                            <div class="detalhesProduto">
-                                <h3 class="nomeProduto">Bola de Tênis Chuckit M - Pack com 2</h3>
-                                <h4>De R$ 96,69</h4>
-                                <h2>Por R$ 90,69</h2>
-                                <p><span>R$ 85,69</span><br>Para assinantes</p>
-                            </div>
-                            <button class="btnProduto">ADICIONAR</button>
-                        </div>
+                <div class="carrosselVitrine mySwiper">
+                    <div class="conteudoVitrine swiper-wrapper" id="produtosVitrine">
                     </div>
                     <div class="btnsProdutos">
-                        <div class="btnProdutos btnProdutos-next" id="btnProdutos-prev"></div>
-                        <div class="btnProdutos btnProdutos-next" id="btnProdutos-next"></div>
+                        <div class="btnProdutos" id="btnProdutos-prev"></div>
+                        <div class="btnProdutos" id="btnProdutos-next"></div>
                     </div>
                 </div>
                 <div class="vitrineAll">
                     <a href="#">Ver todos</a>
                     <div class="dotsVitrine">
-                        <div id="dotsAtivado"></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
                     </div>
                 </div>
                 <div class="modalContainer">
                     <div class="modal">
                         <div class="close">
-                            <img id="close" src="./img/svg/close.svg" alt="">
+                            <img id="close" src="./img/svg/close.svg" alt="Icone fechar">
                         </div>
                         <div class="conteudoModal">
-                            <img id="modalImg" src="./img/modal.png" alt="">
+                            <img id="modalImg" src="./img/modal.png" alt="Produto detalhes">
                             <div class="descModal">
                                 <h2>Brinquedo Kong Duratreat Ring P</h2>
                                 <h3>R$ 1499,90</h3>
@@ -256,41 +193,59 @@
                         <a href="">Ver todos</a>
                     </div>
                 </div>
-                <div class="carroselMarcas">
-                    <div class="conteudoMarcas">
-                        <div class="cardMarca">
-                            <a href=""><img src="./img/marca01.png" alt=""></a>
+                <div class="carrosselMarcas">
+                    <div class="conteudoMarcas swiper-wrapper">
+                        <div class="cardMarca swiper-slide">
+                            <a href=""><img src="./img/marca01.png" alt="Marca parceira"></a>
                         </div>
-                        <div class="cardMarca">
-                            <a href=""><img src="./img/marca02.png" alt=""></a>
+                        <div class="cardMarca swiper-slide">
+                            <a href=""><img src="./img/marca02.png" alt="Marca parceira"></a>
                         </div>
-                        <div class="cardMarca">
-                            <a href=""><img src="./img/marca03.png" alt=""></a>
+                        <div class="cardMarca swiper-slide">
+                            <a href=""><img src="./img/marca03.png" alt="Marca parceira"></a>
                         </div>
-                        <div class="cardMarca">
-                            <a href=""><img src="./img/marca01.png" alt=""></a>
+                        <div class="cardMarca swiper-slide">
+                            <a href=""><img src="./img/marca01.png" alt="Marca parceira"></a>
                         </div>
-                        <div class="cardMarca">
-                            <a href=""><img src="./img/marca02.png" alt=""></a>
+                        <div class="cardMarca swiper-slide">
+                            <a href=""><img src="./img/marca02.png" alt="Marca parceira"></a>
                         </div>
-                        <div class="cardMarca">
-                            <a href=""><img src="./img/marca03.png" alt=""></a>
+                        <div class="cardMarca swiper-slide">
+                            <a href=""><img src="./img/marca03.png" alt="Marca parceira"></a>
                         </div>
                     </div>
                     <div class="btnsMarca">
-                        <div class="btnMarca btnMarca-next" id="btnMarca-prev"></div>
-                        <div class="btnMarca btnMarca-next" id="btnMarca-next"></div>
+                        <div class="btnMarca" id="btnMarca-prev"></div>
+                        <div class="btnMarca" id="btnMarca-next"></div>
                     </div>
                 </div>
             </article>
         </section>
         <section class="parceirosAssinatura">
-            <article class="conteudoParceiros">
+            <article class="conteudoParceiros inner-width">
                 <div class="parceiros">
-                    <h2>Parceiros</h2>
-                    <p>Lorem ipsum dolor sit<br>amet, consectetur</p>
-                    <a href="#">Confira</a>
-                    <div></div>
+                    <div class="carrosselParceiros swiper-wrapper">
+                        <div class="cardParceiros swiper-slide">
+                            <h2>Parceiros</h2>
+                            <p>Lorem ipsum dolor sit<br>amet, consectetur</p>
+                            <a href="#">Confira</a>
+                            <div></div>
+                        </div>
+                        <div class="cardParceiros swiper-slide" id="cardParceiros2">
+                            <h2>Parceiros</h2>
+                            <p>Lorem ipsum dolor sit<br>amet, consectetur</p>
+                            <a href="#">Confira</a>
+                            <div></div>
+                        </div>
+                        <div class="cardParceiros swiper-slide" id="cardParceiros3">
+                            <h2>Parceiros</h2>
+                            <p>Lorem ipsum dolor sit<br>amet, consectetur</p>
+                            <a href="#">Confira</a>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="dotsParceiros">
+                    </div>
                 </div>
                 <div class="assinatura">
                     <div>
@@ -300,6 +255,7 @@
                     </div>
                     <div id="imgAssinatura"><img src="./img/assinaturaImg.png" alt="Assinatura"></div>
                 </div>
+
             </article>
         </section>
         <section class="artigos">
@@ -307,11 +263,11 @@
                 <div class="artigoTitulo">
                     <h2>Confira o nosso Blog</h2>
                 </div>
-                <div class="carroselArtigos">
-                    <div class="conteudoArtigos">
-                        <div class="cardArtigo">
+                <div class="carrosselArtigos">
+                    <div class="conteudoArtigos swiper-wrapper">
+                        <div class="cardArtigo swiper-slide">
                             <div class="artigoFoto">
-                                <img src="./img/artigo01.png" alt="">
+                                <img src="./img/artigo01.png" alt="Artigo Imagem">
                             </div>
                             <div class="detalhesArtigo">
                                 <h2>Lorem ipsum dolor sit amet consectetur.</h2>
@@ -319,9 +275,9 @@
                             </div>
                             <button class="btnArtigo">Ler artigo</button>
                         </div>
-                        <div class="cardArtigo">
+                        <div class="cardArtigo swiper-slide">
                             <div class="artigoFoto">
-                                <img src="./img/artigo02.png" alt="">
+                                <img src="./img/artigo02.png" alt="Artigo Imagem">
                             </div>
                             <div class="detalhesArtigo">
                                 <h2>Lorem ipsum dolor sit amet consectetur.</h2>
@@ -329,9 +285,9 @@
                             </div>
                             <button class="btnArtigo">Ler artigo</button>
                         </div>
-                        <div class="cardArtigo">
+                        <div class="cardArtigo swiper-slide">
                             <div class="artigoFoto">
-                                <img src="./img/artigo03.png" alt="">
+                                <img src="./img/artigo03.png" alt="Artigo Imagem">
                             </div>
                             <div class="detalhesArtigo">
                                 <h2>Lorem ipsum dolor sit amet consectetur.</h2>
@@ -339,9 +295,29 @@
                             </div>
                             <button class="btnArtigo">Ler artigo</button>
                         </div>
-                        <div class="cardArtigo">
+                        <div class="cardArtigo swiper-slide">
                             <div class="artigoFoto">
-                                <img src="./img/artigo04.png" alt="">
+                                <img src="./img/artigo04.png" alt="Artigo Imagem">
+                            </div>
+                            <div class="detalhesArtigo">
+                                <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur elit adipiscing dignissim posuere vitae.</p>
+                            </div>
+                            <button class="btnArtigo">Ler artigo</button>
+                        </div>
+                        <div class="cardArtigo swiper-slide">
+                            <div class="artigoFoto">
+                                <img src="./img/artigo01.png" alt="Artigo Imagem">
+                            </div>
+                            <div class="detalhesArtigo">
+                                <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur elit adipiscing dignissim posuere vitae.</p>
+                            </div>
+                            <button class="btnArtigo">Ler artigo</button>
+                        </div>
+                        <div class="cardArtigo swiper-slide">
+                            <div class="artigoFoto">
+                                <img src="./img/artigo02.png" alt="Artigo Imagem">
                             </div>
                             <div class="detalhesArtigo">
                                 <h2>Lorem ipsum dolor sit amet consectetur.</h2>
@@ -351,15 +327,12 @@
                         </div>
                     </div>
                     <div class="btnsArtigos">
-                        <div class="btnArtigos btnArtigos-next" id="btnArtigos-prev"></div>
-                        <div class="btnArtigos btnArtigos-next" id="btnArtigos-next"></div>
+                        <div class="btnArtigos" id="btnArtigos-prev"></div>
+                        <div class="btnArtigos" id="btnArtigos-next"></div>
                     </div>
                 </div>
                 <div class="dotsBlog">
                     <div class="dots">
-                        <div id="dotsAtivado"></div>
-                        <div></div>
-                        <div></div>
                     </div>
                 </div>
             </article>
@@ -373,13 +346,15 @@
                     </div>
                 </div>
             </article>
-            <div class="conteudoGaleria owl-carousel">
-                <div><img src="img/galeria01.png" alt="Galeria 01"></div>
-                <div><img src="img/galeria02.png" alt="Galeria 02"></div>
-                <div><img src="img/galeria03.png" alt="Galeria 03"></div>
-                <div><img src="img/galeria04.png" alt="Galeria 04"></div>
-                <div><img src="img/galeria05.png" alt="Galeria 05"></div>
-                <div><img src="img/galeria06.png" alt="Galeria 06"></div>
+            <div class="carrosselGaleria">
+                <div class="conteudoGaleria swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/galeria01.png" alt="Galeria 01"></div>
+                    <div class="swiper-slide"><img src="img/galeria02.png" alt="Galeria 02"></div>
+                    <div class="swiper-slide"><img src="img/galeria03.png" alt="Galeria 03"></div>
+                    <div class="swiper-slide"><img src="img/galeria04.png" alt="Galeria 04"></div>
+                    <div class="swiper-slide"><img src="img/galeria05.png" alt="Galeria 05"></div>
+                    <div class="swiper-slide"><img src="img/galeria06.png" alt="Galeria 06"></div>
+                </div>
             </div>
         </section>
         <section class="newsletter">
@@ -461,6 +436,8 @@
             </section>
          </section>
     </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 </body>
 

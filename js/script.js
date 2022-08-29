@@ -1,33 +1,45 @@
-/* TESTE VITRINE COM JQUERY */
+/////////////////////////////////////////////////////////////////////////////
+/* VITRINE DE PRODUTOS */
+function pegarUrl(url){
+    let request = new XMLHttpRequest()
+    request.open("GET", url, false)
+    request.send()
+    return request.responseText
+}
+let data = pegarUrl("https://app.econverse.com.br/teste-front-end/junior/caoselheiro/lista-produtos/produtos.json");
+let produtos = JSON.parse(data);
 
 $(document).ready(function(e){
 
-    jsonObject.products.forEach((i)=>loadProducts(i));
+    produtos.products.forEach((i)=>loadProducts(i));
 
 });
 
 
 function loadProducts(data){
 
-    var li = document.createElement('li');
+    var div = document.createElement('div');
+    
+    if (div.classList) div.classList.add("swiper-slide");
+    else div.className += " swiper-slide";
 
-    li.innerHTML ='<div class="cardProduto">'+
+    div.innerHTML ='<div class="cardProduto">'+
                             '<div class="badge">40% OFF</div>'+
                             '<div class="badgeHeart"><img src="./img/heartIcon.png" alt=""></div>'+
-                            '<div class="produtoFoto"><img src="'+data.photo+'" alt=""></div>'+
+                            '<div class="produtoFoto"><img src="./img/card01.png" alt=""></div>'+
                             '<div class="detalhesProduto">'+
                                 '<h3 id="nomeProduto">'+data.productName+'</h3>'+
                                 '<h4>De R$ 96,69</h4>'+
-                                '<h2>Por R$ 90,69</h2>'+
+                                '<h2>Por R$ '+data.price+'</h2>'+
                                 '<p><span>R$ 85,69</span><br>Para assinantes</p>'+
                             '</div>'+
                             '<button class="btnProduto">ADICIONAR</button>'
                         '</div>';
-document.getElementById("home_product").appendChild(li);
+document.getElementById("produtosVitrine").appendChild(div);
 }
 
 /////////////////////////////////////////////////////////////////////////////
-/* MODAL OPEM */
+/* MODAL OPEN */
 
 $(document).ready(function(){
     $('.btnProduto').click(function(){
@@ -133,22 +145,70 @@ function bannerLoop(){
     }
 }
 
-  $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:false,
-    nav:false,
-    autoplay: true,
-    autoplayTimeout: 2000, //2000ms = 2s;
-    autoplayHoverPause: true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:6
-        }
-    }
-})
+/////////////////////////////////////////////////////////////////////////////
+/* SWIPERJS */
+
+var swiper = new Swiper(".carrosselCategoria", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    slidesPerGroup: 1,
+    navigation: {
+        nextEl: "#btnCategoria-next",
+        prevEl: "#btnCategoria-prev",
+    },
+});
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    slidesPerGroup: 1,
+    loop: false,
+    loopFillGroupWithBlank: true,
+    pagination: {
+        el: ".dotsVitrine",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: "#btnProdutos-next",
+        prevEl: "#btnProdutos-prev",
+    },
+});
+
+var swiper = new Swiper(".carrosselArtigos", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    slidesPerGroup: 1,
+    pagination: {
+        el: ".dots",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: "#btnArtigos-next",
+        prevEl: "#btnArtigos-prev",
+    },
+});
+
+var swiper = new Swiper(".carrosselMarcas", {
+    slidesPerView: 6,
+    spaceBetween: 30,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    navigation: {
+        nextEl: "#btnMarca-next",
+        prevEl: "#bbtnMarca-prev",
+    },
+});
+
+var swiper = new Swiper(".parceiros", {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    pagination: {
+        el: ".dotsParceiros",
+        clickable: true,
+    },
+});
+
+var swiper = new Swiper(".carrosselGaleria", {
+    slidesPerView: 3,
+    spaceBetween: 0,
+
+});

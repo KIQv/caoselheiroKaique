@@ -10,7 +10,9 @@
     height: 1px;
     border: none;
 }
-
+body{
+    overflow-x: hidden;
+}
 .site{
     .topo{
         width: 100%;
@@ -326,12 +328,13 @@
     height: auto;
 
     .inner-width{
+        overflow: hidden;
         h2{
             @include text-style($black-color, 32px, Poppins, 700, 48px);
             margin-bottom: 24px;
         }
     
-        .carroselCategoria{
+        .carrosselCategoria{
             .conteudoCategorias{
                 display: flex;
                 justify-content: space-between;
@@ -339,7 +342,9 @@
                     display: flex;
                     flex-direction: column;
                     align-items: center;
+                    border-radius: 20px;
                     img{
+                        border-radius: 20px;
                         width: 277px;
                         height: 277px;
                         margin-bottom: 8px
@@ -392,7 +397,7 @@
     height: auto;
 
     .inner-width{
-
+        overflow: hidden;
         .vitrineOpcoes{
             display: flex;
             justify-content: space-between;
@@ -437,14 +442,14 @@
                 }
             }
         }
-        .carroselVitrine{
+        .carrosselVitrine{
             .conteudoVitrine{
                 display: flex;
                 justify-content: space-between;
                 
                 .cardProduto {
                     width: 254px;
-                    height: auto;
+                    height: 415px;
                     position: relative;
                     margin: 50px auto;
                     display: flex;
@@ -484,6 +489,8 @@
                 
                         h3{
                             @include text-style($black-color, 14px, Poppins, 300, 21px);
+                            text-transform: uppercase;
+                            height: 42px;
                             margin-bottom: 14px;
                             cursor: pointer;
                         }
@@ -563,16 +570,20 @@
             }
             .dotsVitrine{
                 display: flex;
-                div{
+                justify-content: center;
+                margin-top: 16px;
+                span{
                     width: 12px;
                     height: 12px;
-                    border-radius: 50%;
-                    border: 2px solid $gray01-color;
-                    margin: 10px 8px;
-                    
+                    border: 2px solid #9F9F9F;
+                    background-color: transparent;
+
                 }
-                #dotsAtivado{
-                    background-color: $gray01-color;
+                .swiper-pagination-bullet{
+                    opacity: 1;
+                }
+                .swiper-pagination-bullet-active{
+                    background-color: #9F9F9F;
                 }
             }
         }
@@ -651,6 +662,7 @@
 
     .inner-width{
         padding: 0 40px;
+        overflow: hidden;
         .marcaHeader{
             display: flex;
             justify-content: space-between;
@@ -668,7 +680,8 @@
                 }
             }
         }
-        .carroselMarcas{
+        .carrosselMarcas{
+            padding-bottom: 30px;
             .conteudoMarcas{
                 display: flex;
                 justify-content: space-between;
@@ -727,46 +740,83 @@
     .conteudoParceiros{
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
 
         .parceiros{
             width: 574px;
-            height: 350px;
-            background-image: url(../img/parceirosImg.png);
+            height: 386px;
             margin-right: 10px;
             margin-left: 35px;
-            padding: 114px 40px 40px;
-            h2{
-                @include text-style(#fff, 40px, Poppins, 700, 60px);
-                margin-bottom: 8px;
-                position: relative;
-                z-index: 1;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .carrosselParceiros{
+                height: 350px;
+                .cardParceiros{
+                    width: 574px;
+                    height: 350px;
+                    border-radius: 20px;
+                    background-image: url(../img/parceirosImg.png);
+
+                    padding: 114px 40px 40px;
+                    h2{
+                        @include text-style(#fff, 40px, Poppins, 700, 60px);
+                        margin-bottom: 8px;
+                        position: relative;
+                        z-index: 1;
+                    }
+                    p{
+                        @include text-style(#fff, 16px, Poppins, 400, 24px);
+                        margin-bottom: 32px;
+                        position: relative;
+                        z-index: 1;
+                    }
+                    a{
+                        @include text-style(#fff, 16px, Poppins, 900, 24px);
+                        text-transform: uppercase;
+                        background-color: $primary-color;
+                        border: 1px solid $support-color;
+                        border-radius: 10px;
+                        padding: 12px 24px;
+                        position: relative;
+                        z-index: 1;
+                    }
+                    div{
+                        width: 574px;
+                        height: 284px;
+                        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 85.04%);
+                        opacity: 0.8;
+                        border-radius: 0px 0px 20px 20px;
+                        position: relative;
+                        top: -220px;
+                        left: -40px;
+                    }
+                }
+                #cardParceiros2{
+                    background-image: url(../img/parceirosImg2.png);
+                }
+                #cardParceiros3{
+                    background-image: url(../img/parceirosImg3.png);
+                }
             }
-            p{
-                @include text-style(#fff, 16px, Poppins, 400, 24px);
-                margin-bottom: 32px;
-                position: relative;
-                z-index: 1;
-            }
-            a{
-                @include text-style(#fff, 16px, Poppins, 900, 24px);
-                text-transform: uppercase;
-                background-color: $primary-color;
-                border: 1px solid $support-color;
-                border-radius: 10px;
-                padding: 12px 24px;
-                position: relative;
-                z-index: 1;
-            }
-            div{
-                width: 574px;
-                height: 284px;
-                background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 85.04%);
-                opacity: 0.8;
-                border-radius: 0px 0px 20px 20px;
-                position: relative;
-                top: -220px;
-                left: -40px;
+            .dotsParceiros{
+                display: flex;
+                justify-content: center;
+                margin-top: 16px;
+                span{
+                    width: 12px;
+                    height: 12px;
+                    border: 2px solid #9F9F9F;
+                    background-color: transparent;
+
+                }
+                .swiper-pagination-bullet{
+                    opacity: 1;
+                }
+                .swiper-pagination-bullet-active{
+                    background-color: #9F9F9F;
+                }
             }
         }
         .assinatura{
@@ -807,6 +857,9 @@
             }
         }
     }
+    .inner-width{
+        padding: 0;
+    }
 }
 .artigos{
     margin: 40px 0 0;
@@ -814,7 +867,7 @@
     height: auto;
 
     .inner-width{
-
+        overflow: hidden;
         .artigoTitulo{
             display: flex;
             justify-content: space-between;
@@ -825,7 +878,7 @@
                 @include text-style($black-color, 32px, Poppins, 700, 48px);
             }
         }
-        .carroselArtigos{
+        .carrosselArtigos{
             .conteudoArtigos{
                 display: flex;
                 justify-content: space-between;
@@ -915,21 +968,21 @@
             }
         }
         .dotsBlog{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
             .dots{
                 display: flex;
-                div{
+                justify-content: center;
+                span{
                     width: 12px;
                     height: 12px;
-                    border-radius: 50%;
-                    border: 2px solid $gray01-color;
-                    margin: 10px 8px;
-                    
+                    border: 2px solid #9F9F9F;
+                    background-color: transparent;
+
                 }
-                #dotsAtivado{
-                    background-color: $gray01-color;
+                .swiper-pagination-bullet{
+                    opacity: 1;
+                }
+                .swiper-pagination-bullet-active{
+                    background-color: #9F9F9F;
                 }
             }
         }
@@ -958,21 +1011,21 @@
             }
         }
     }
-
-
-    .conteudoGaleria{
-        display: flex;
-
-        img{
-            height: auto;
-            width: 100%;
-            background: #fff;
-            margin: 0;
+    .carrosselGaleria{
+        .conteudoGaleria{
+            display: flex;
+            .swiper-slide{
+                margin: 0;
+                max-width: 243px;
+                max-height: 243px;
+            }
+            img{
+                width: 243px;
+                height: 243px;
+                background: #fff;
+                margin: 0;
+            }
         }
-
-        .carousel-item {
-            margin-left: 0px;
-          }
     }
 }
 .newsletter{
@@ -1064,6 +1117,7 @@ footer{
         display: flex;
         height: auto;
         width: 100%;
+        margin-top: 47px;
 
         .redesSociais{
             border-right: 1px solid #fff;
